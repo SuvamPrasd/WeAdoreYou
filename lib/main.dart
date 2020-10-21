@@ -49,6 +49,15 @@ class _HomePageState extends State<HomePage> {
                 }),
           ],
         ),
+        body: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset('girls.png'),
+            ],
+          ),
+        ),
       ),
     );
   }
