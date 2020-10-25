@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weadoreyou/helpers/custom_route.dart';
 import './utilities/details.dart';
 import './utilities/style.dart';
 
@@ -7,6 +8,8 @@ import './screens/puberty.dart';
 import './screens/prod.dart';
 import './screens/mens.dart';
 import './screens/health.dart';
+import 'screens/start.dart';
+import './helpers/custom_route.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +20,13 @@ class MyApp extends StatelessWidget {
       title: 'We Adore You',
       home: HomePage(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'Poppins'),
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+        pageTransitionsTheme: PageTransitionsTheme(builders: {
+          TargetPlatform.android: CustomPageTransitionBuilder(),
+          TargetPlatform.iOS: CustomPageTransitionBuilder(),
+        },),
+      ),
       initialRoute: '/',
       routes: {
         '/start': (BuildContext context) => Start(),
@@ -25,7 +34,6 @@ class MyApp extends StatelessWidget {
         '/mens': (BuildContext context) => Mens(),
         '/prod': (BuildContext context) => Prod(),
         '/health': (BuildContext context) => Health(),
-
       },
     );
   }
