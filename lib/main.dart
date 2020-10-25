@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weadoreyou/helpers/custom_route.dart';
 import './utilities/details.dart';
 import './utilities/style.dart';
 
@@ -8,7 +7,6 @@ import './screens/puberty.dart';
 import './screens/prod.dart';
 import './screens/mens.dart';
 import './screens/health.dart';
-import 'screens/start.dart';
 import './helpers/custom_route.dart';
 
 void main() => runApp(MyApp());
@@ -22,10 +20,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Poppins',
-        pageTransitionsTheme: PageTransitionsTheme(builders: {
-          TargetPlatform.android: CustomPageTransitionBuilder(),
-          TargetPlatform.iOS: CustomPageTransitionBuilder(),
-        },),
+        pageTransitionsTheme: PageTransitionsTheme(
+          builders: {
+            TargetPlatform.android: CustomPageTransitionBuilder(),
+            TargetPlatform.iOS: CustomPageTransitionBuilder(),
+          },
+        ),
       ),
       initialRoute: '/',
       routes: {
