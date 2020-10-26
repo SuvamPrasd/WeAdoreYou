@@ -49,6 +49,15 @@ class Mens extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  periods_words,
+                  style: TextStyle(
+                    height: 2.0,
+                  ),
+                ),
+                SizedBox(
                   height: 30,
                 ),
                 ListView.builder(
