@@ -89,3 +89,7 @@ const List<dynamic> periods_que = [
 
 const String periods_words =
     "Periods are a natural, healthy part of a girl's life. They shouldn't get in the way of exercising, having fun, and enjoying life.";
+
+//information about health issues
+const String health =
+    "While both men and women contract various conditions, some health issues affect women differently and more commonly. Furthermore, many women’s health conditions go undiagnosed and most drug trials do not include female test subjects. Even so, women bear exclusive health concerns, such as breast cancer, cervical cancer, menopause, and pregnancy. Women suffer higher heart attack deaths compared to men. ";
