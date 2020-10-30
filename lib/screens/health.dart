@@ -74,7 +74,8 @@ class Health extends StatelessWidget {
                               style: TextStyle(fontWeight: FontWeight.w600),
                             ),
                             enabled: true,
-                            onTap: () => {_showDetails(context, index)},
+                            onTap: () =>
+                                {_showDetails(context, index, _deviceWidth)},
                           ),
                         ),
                       );
@@ -93,18 +94,46 @@ class Health extends StatelessWidget {
     );
   }
 
-  Future<void> _showDetails(BuildContext context, int index) async {
+  Future<void> _showDetails(
+      BuildContext context, int index, double _deviceWidth) async {
     return showDialog(
         context: context,
         barrierDismissible: false,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text(health_issues[index]),
+            title: Text(
+              health_issues[index],
+              style: TextStyle(
+                  fontWeight: FontWeight.w600, color: Colors.red[300]),
+            ),
             content: SingleChildScrollView(
               child: ListBody(
                 children: <Widget>[
-                  Text(''),
-                  Text(''),
+                  Text(
+                    "Description",
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    health_ans[index]["des"],
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Text(
+                    "Solution",
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    health_ans[index]["ans"],
+                    style: TextStyle(color: Colors.grey[600]),
+                  ),
                 ],
               ),
             ),
