@@ -94,35 +94,86 @@ const String periods_words =
 const String health =
     "While both men and women contract various conditions, some health issues affect women differently and more commonly. Furthermore, many women’s health conditions go undiagnosed and most drug trials do not include female test subjects. Even so, women bear exclusive health concerns, such as breast cancer, cervical cancer, menopause, and pregnancy. Women suffer higher heart attack deaths compared to men. ";
 
-const List<String> health_issues = ["Heart Disease", "Breast Cancer", "Ovarian and Cervical Cancer", "Gynecological Health", "Pregnancy Issues", "Autoimmune Diseases", "Depression and Anxiety"];
+const List<String> health_issues = [
+  "Heart Disease",
+  "Breast Cancer",
+  "Ovarian and Cervical Cancer",
+  "Gynecological Health",
+  "Pregnancy Issues",
+  "Autoimmune Diseases",
+  "Depression and Anxiety"
+];
 
 const List<dynamic> health_ans = [
   {
-    "des": "The most common heart attack symptom in women is the same as in men – some type of chest pain, pressure or discomfort that lasts more than a few minutes or comes and goes. But chest pain is not always severe or even the most noticeable symptom, particularly in women. Women often describe it as pressure or tightness. And, it's possible to have a heart attack without chest pain.",
-    "ans":"Quit smoking, Exercise regularly, Maintain a healthy weight, Eat a healthy diet, Manage your stress, Limit alcohol, Follow your treatment plan, Manage other health conditions.",
+    "des":
+        "The most common heart attack symptom in women is the same as in men – some type of chest pain, pressure or discomfort that lasts more than a few minutes or comes and goes. But chest pain is not always severe or even the most noticeable symptom, particularly in women. Women often describe it as pressure or tightness. And, it's possible to have a heart attack without chest pain.",
+    "ans":
+        "Quit smoking, Exercise regularly, Maintain a healthy weight, Eat a healthy diet, Manage your stress, Limit alcohol, Follow your treatment plan, Manage other health conditions.",
   },
   {
-    "des": "Breast cancer can occur in women and rarely in men. Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.",
-"ans": "Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery." 
+    "des":
+        "Breast cancer can occur in women and rarely in men. Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.",
+    "ans":
+        "Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery."
   },
   {
-    "des":"They occur in different parts of the female reproductive system: cervical cancer is found in the cervix, which is the narrow, lower part of the uterus where it connects to the upper end of the vagina; ovarian cancer originates in the fallopian tubes and occurs in the ovaries, which are reproductive organs on each side .",
-    "ans": "Typically, it is treated by surgery, radiation therapy, chemotherapy, or a combination of treatments."
+    "des":
+        "They occur in different parts of the female reproductive system: cervical cancer is found in the cervix, which is the narrow, lower part of the uterus where it connects to the upper end of the vagina; ovarian cancer originates in the fallopian tubes and occurs in the ovaries, which are reproductive organs on each side .",
+    "ans":
+        "Typically, it is treated by surgery, radiation therapy, chemotherapy, or a combination of treatments."
   },
   {
-    "des":"Although irregular cycles or painful monthly cramps can be common issues affecting women, they are by no means something that women must adjust to as their norm. Many intervention methods, both surgical and medical, exist to relieve and in many cases cure symptoms of conditions ranging from menstrual disorders to urinary incontinence.",
-    "ans": "Speak with your physician if you are experiencing especially painful cramps, severe abdominal pain, or heavy and/or prolonged bleeding between periods or during intercourse, as they could be signs of a more serious women's health issue."
+    "des":
+        "Although irregular cycles or painful monthly cramps can be common issues affecting women, they are by no means something that women must adjust to as their norm. Many intervention methods, both surgical and medical, exist to relieve and in many cases cure symptoms of conditions ranging from menstrual disorders to urinary incontinence.",
+    "ans":
+        "Speak with your physician if you are experiencing especially painful cramps, severe abdominal pain, or heavy and/or prolonged bleeding between periods or during intercourse, as they could be signs of a more serious women's health issue."
   },
   {
-    "des":"High blood pressure, gestational diabetes, preeclampsia, preterm labor, a loss of pregnancy, or miscarriage,etc.",
-    "ans": "Eat small, frequent meals, Stay away from greasy or fried food, coffee, cola, and smoking, Eat slowly and chew your food well, and Don't lie down for at least half an hour after meals."
+    "des":
+        "High blood pressure, gestational diabetes, preeclampsia, preterm labor, a loss of pregnancy, or miscarriage,etc.",
+    "ans":
+        "Eat small, frequent meals, Stay away from greasy or fried food, coffee, cola, and smoking, Eat slowly and chew your food well, and Don't lie down for at least half an hour after meals."
   },
   {
-    "des":"In an autoimmune disease, the immune system mistakes part of your body, like your joints or skin, as foreign. It releases proteins called autoantibodies that attack healthy cells.Some autoimmune diseases target only one organ. Type 1 diabetes damages the pancreas. Other diseases, like systemic lupus erythematosus (SLE), affect the whole body.",
-    "ans": "The right diet can help ease pain and heal autoimmune diseases. In general, avoid caffeine, alcohol, sugar, grains, dairy and red meat, and focus on fruits, vegetables, healthy fats and fish. Try these six foods to make living with autoimmune conditions easier."
+    "des":
+        "In an autoimmune disease, the immune system mistakes part of your body, like your joints or skin, as foreign. It releases proteins called autoantibodies that attack healthy cells.Some autoimmune diseases target only one organ. Type 1 diabetes damages the pancreas. Other diseases, like systemic lupus erythematosus (SLE), affect the whole body.",
+    "ans":
+        "The right diet can help ease pain and heal autoimmune diseases. In general, avoid caffeine, alcohol, sugar, grains, dairy and red meat, and focus on fruits, vegetables, healthy fats and fish. Try these six foods to make living with autoimmune conditions easier."
   },
   {
-    "des":"Depression and anxiety disorders are different, but people with depression often experience symptoms similar to those of an anxiety disorder, such as nervousness, irritability, and problems sleeping and concentrating. But each disorder has its own causes and its own emotional and behavioral symptoms.",
-    "ans": "Shout it out. talking to a trusted friend is one way to cope with anxiety, get moving, break up with caffeine, give yourself a bedtime, feel OK saying no, don't skip meals, give yourself an exit strategy, live in the moment,etc."
+    "des":
+        "Depression and anxiety disorders are different, but people with depression often experience symptoms similar to those of an anxiety disorder, such as nervousness, irritability, and problems sleeping and concentrating. But each disorder has its own causes and its own emotional and behavioral symptoms.",
+    "ans":
+        "Shout it out. talking to a trusted friend is one way to cope with anxiety, get moving, break up with caffeine, give yourself a bedtime, feel OK saying no, don't skip meals, give yourself an exit strategy, live in the moment,etc."
+  }
+];
+
+const List<dynamic> products = [
+  {
+    "title": "Sanitary Pads",
+    "des":
+        "Most girls use pads when they first get their period. Pads are made of cotton and come in lots of different sizes and shapes. They have sticky strips that attach to the underwear.",
+    "price": "Price varies in different places",
+    "imageLink": "assets/images/pads.jpg",
+    "link": "https://www.amazon.in/Sanitary-Napkins/b?ie=UTF8&node=1374609031"
+  },
+  {
+    "title": "Tampons",
+    "des":
+        "Many girls find tampons more convenient than pads, especially when playing sports or swimming. A tampon is a cotton plug that a girl puts into her vagina. Most tampons come with an applicator that guides the tampon into place. The tampon absorbs the blood. Don't leave a tampon in for more than 8 hours because this can increase your risk of a serious infection called toxic shock syndrome.",
+    "price": "Price varies in different places",
+    "imageLink": "assets/images/tampon.jpg",
+    "link":
+        "https://www.amazon.in/Bella-Tampo-Super-Plus-Twist/dp/B07BDSPKDK?ref_=Oct_s9_apbd_old_hd_bw_b1V1irX_0_a11cb961&pf_rd_r=Q91CRC4JG39BMWEKPJGK&pf_rd_p=d8e6532f-1769-5aea-bb8e-343a0056d7a6&pf_rd_s=merchandised-search-9&pf_rd_t=BROWSE&pf_rd_i=1374610031"
+  },
+  {
+    "title": "Menstrual Cup",
+    "des":
+        "Some girls prefer a menstrual cup. Most menstrual cups are made of silicone. To use a menstrual cup, a girl inserts it into her vagina. It holds the blood until she empties it.",
+    "price": "Price varies in different places",
+    "imageLink": "assets/images/cup.jpg",
+    "link":
+        "https://www.amazon.in/s?k=menstrual+cup&i=hpc&crid=5RMKZF1XQR7&sprefix=menstru%2Chpc%2C395&ref=nb_sb_ss_ts-a-p_1_7"
   }
 ];
