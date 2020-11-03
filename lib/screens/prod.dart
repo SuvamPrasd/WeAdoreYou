@@ -89,15 +89,11 @@ class Prod extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: RaisedButton.icon(
+                          child: RaisedButton(
                             onPressed: () {
                               return _openUrl(products[index]['link']);
                             },
-                            icon: Icon(
-                              Icons.supervised_user_circle,
-                              color: Colors.white,
-                            ),
-                            label: Text(
+                            child: Text(
                               'BUY',
                               style: TextStyle(color: Colors.white),
                             ),

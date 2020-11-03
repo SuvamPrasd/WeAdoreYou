@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../utilities/style.dart';
 
 import './puberty.dart';
@@ -24,6 +27,19 @@ class Start extends StatelessWidget {
           ),
           centerTitle: true,
           backgroundColor: black_color,
+          actions: [
+            IconButton(
+                icon: Icon(Icons.exit_to_app),
+                onPressed: () {
+                  SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+                  exit(0);
+                }),
+            IconButton(
+                icon: Icon(Icons.lightbulb, color: Colors.yellow),
+                onPressed: () {
+                  _specialThanks(context);
+                })
+          ],
         ),
         backgroundColor: black_color,
         body: Container(
@@ -79,4 +95,29 @@ class Start extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<void> _specialThanks(BuildContext context) async {
+  return showDialog(
+    useSafeArea: true,
+    context: context,
+    barrierDismissible: true,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text(
+          'Thanks for the information',
+          style: TextStyle(color: Colors.orange),
+        ),
+        content: SingleChildScrollView(
+          child: ListBody(
+            children: [
+              Text('msdmanuals.com'),
+              Text('kidshealth.org'),
+              Text('online.regiscollege.edu'),
+            ],
+          ),
+        ),
+      );
+    },
+  );
 }

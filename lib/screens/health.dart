@@ -75,7 +75,7 @@ class Health extends StatelessWidget {
                             ),
                             enabled: true,
                             onTap: () =>
-                                {_showDetails(context, index, _deviceWidth)},
+                                {_showDetails(context, index)},
                           ),
                         ),
                       );
@@ -95,7 +95,7 @@ class Health extends StatelessWidget {
   }
 
   Future<void> _showDetails(
-      BuildContext context, int index, double _deviceWidth) async {
+      BuildContext context, int index) async {
     return showDialog(
         context: context,
         barrierDismissible: false,
