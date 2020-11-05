@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                 image: AssetImage('assets/images/girls.png'),
                 alignment: Alignment.center,
                 fit: BoxFit.contain,
-                height: 100,
+                height: 150,
               ),
               SizedBox(
                 height: 40,
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.keyboard_arrow_up),
+          child: Icon(Icons.keyboard_arrow_right),
           tooltip: 'Start',
           onPressed: () {
             Navigator.of(context).pushReplacementNamed(Start.routeName);
