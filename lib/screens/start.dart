@@ -50,10 +50,10 @@ class Start extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 10),
+                SizedBox(height: 20),
                 SvgPicture.asset(
                   'assets/images/yoga.svg',
-                  width: _width - 50,
+                  width: 180,
                 ),
                 SizedBox(height: 20),
                 ItemButton(
