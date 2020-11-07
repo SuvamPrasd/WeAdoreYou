@@ -31,22 +31,26 @@ class Puberty extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image(
-                    image: AssetImage(
-                      'assets/images/puberty1.jpg',
+                  InteractiveViewer(
+                    child: Image(
+                      image: AssetImage(
+                        'assets/images/puberty1.jpg',
+                      ),
+                      fit: BoxFit.contain,
+                      alignment: Alignment.center,
                     ),
-                    fit: BoxFit.contain,
-                    alignment: Alignment.center,
                   ),
                   SizedBox(
                     height: 10,
                   ),
-                  Image(
-                    image: AssetImage(
-                      'assets/images/female-chart.png',
+                  InteractiveViewer(
+                    child: Image(
+                      image: AssetImage(
+                        'assets/images/female-chart.png',
+                      ),
+                      fit: BoxFit.contain,
+                      alignment: Alignment.center,
                     ),
-                    fit: BoxFit.contain,
-                    alignment: Alignment.center,
                   ),
                   SizedBox(
                     height: 10,
