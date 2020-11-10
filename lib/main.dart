@@ -60,20 +60,6 @@ class _HomePageState extends State<HomePage> {
           ),
           backgroundColor: primary,
           elevation: 0.0,
-          actions: [
-            IconButton(
-                icon: Icon(
-                  Icons.info,
-                  color: Colors.black,
-                ),
-                onPressed: () {
-                  return showAboutDialog(
-                      context: context,
-                      applicationName: main_title,
-                      applicationLegalese: '',
-                      applicationVersion: '1.0v');
-                }),
-          ],
         ),
         body: Container(
           width: _width,

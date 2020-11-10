@@ -30,15 +30,15 @@ class Start extends StatelessWidget {
           backgroundColor: black_color,
           actions: [
             IconButton(
+                icon: Icon(Icons.info),
+                onPressed: () {
+                  _specialThanks(context);
+                }),
+            IconButton(
                 icon: Icon(Icons.exit_to_app),
                 onPressed: () {
                   SystemChannels.platform.invokeMethod('SystemNavigator.pop');
                   exit(0);
-                }),
-            IconButton(
-                icon: Icon(Icons.lightbulb, color: Colors.yellow),
-                onPressed: () {
-                  _specialThanks(context);
                 })
           ],
         ),
@@ -107,26 +107,18 @@ class Start extends StatelessWidget {
 }
 
 Future<void> _specialThanks(BuildContext context) async {
-  return showDialog(
-    useSafeArea: true,
-    context: context,
-    barrierDismissible: true,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        title: Text(
-          'Thanks for the information',
-          style: TextStyle(color: Colors.orange),
+  return showAboutDialog(
+      context: context,
+      applicationName: 'We Adore You',
+      applicationLegalese: '',
+      applicationVersion: '1.0v',
+      children: [
+        ListBody(
+          children: [
+            Text('msdmanuals.com'),
+            Text('kidshealth.org'),
+            Text('online.regiscollege.edu'),
+          ],
         ),
-        content: SingleChildScrollView(
-          child: ListBody(
-            children: [
-              Text('msdmanuals.com'),
-              Text('kidshealth.org'),
-              Text('online.regiscollege.edu'),
-            ],
-          ),
-        ),
-      );
-    },
-  );
+      ]);
 }
